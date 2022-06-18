@@ -25,7 +25,7 @@ local Font = require "path.to.font"
 local wakuwaku = nil
 
 function love.load()
-  wakuwaku = Font.register(
+  wakuwaku = Font.new(
     "path/to/font/wakuwaku.otf",
     {sm = 16, md = 24, lg = 32, xl = 48, xxl = 72 }
     )
@@ -73,7 +73,7 @@ You can also set them on the individual results of calling `new` by using
 `reconfigure`
 
 ```lua
-  local wakuwaku = Font.register(
+  local wakuwaku = Font.new(
     "path/to/font/wakuwaku.otf",
     {sm = 16, md = 24, lg = 32, xl = 48, xxl = 72 }
     )
@@ -124,3 +124,8 @@ as the this instance's set of breakpoints to change the font size.
 
 Contributions welcome :) As this is an experiment, there's no doubt flaws or
 improvements to be made
+
+### Attribution
+
+Example font is `mini-wakuwaku` by miniyama, gratefully retrieved from
+https://www.freejapanesefont.com/mini-wakuwaku/
